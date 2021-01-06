@@ -8,12 +8,12 @@
     <dir minversion="19.0.0">
       <info compressed="false">https://raw.githubusercontent.com/Pako2/repo.listener-kodi_addons/main/matrix/addons.xml</info>
       <checksum>https://raw.githubusercontent.com/Pako2/repo.listener-kodi_addons/main/matrix/addons.xml.md5</checksum>
-      <datadir zip="true">https://github.com/Pako2/repo.listener-kodi_addons/tree/main/matrix/</datadir>
+      <datadir zip="true">https://raw.githubusercontent.com/Pako2/repo.listener-kodi_addons/main/matrix/</datadir>
     </dir>
     <dir minversion="17.0.0" maxversion="18.9.9">
       <info compressed="false">https://raw.githubusercontent.com/Pako2/repo.listener-kodi_addons/main/leia/addons.xml</info>
       <checksum>https://raw.githubusercontent.com/Pako2/repo.listener-kodi_addons/main/leia/addons.xml.md5</checksum>
-      <datadir zip="true">https://github.com/Pako2/repo.listener-kodi_addons/tree/main/leia/</datadir>
+      <datadir zip="true">https://raw.githubusercontent.com/Pako2/repo.listener-kodi_addons/main/leia/</datadir>
     </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
