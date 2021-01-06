@@ -1,2 +1,2 @@
-# repo-kodi_addons.listener
+# repo.listener-kodi_addons
 listener's Add-on Repository for KODI
