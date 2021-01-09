@@ -1,8 +1,116 @@
-<html>
-    <head><title>Index of files</title></head>
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Listenerův repozitář doplňků pro Kodi</title>
+        <meta name="description" content="Doplňky multimediálního centra Kodi." />
+        <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+              .column1 {
+              float: left;
+              width: 80%;
+              padding: 5px;
+            }
+            .column2 {
+              float: right;
+              width: 20%;
+              padding: 5px;
+            }
+            /* Clearfix (clear floats) */
+            .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            h1 {
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold;
+              font-size: 2em;
+              margin-top: 10px;
+              margin-bottom: 0px;
+            }
+            h2 {
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold;
+              font-size: 1.5em;;
+              line-height: 0px;
+              margin-top: 15px;
+              margin-bottom: 0px;
+            }
+            h3 {
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold;
+              font-size: 1.2em;;
+              line-height: 0px;
+              padding: 10px;
+              margin-top: 25px;
+              margin-bottom: 0px;
+            }
+           .paragraph, .paragraph ol, .paragraph pre {
+              margin-top: 6px;
+              margin-bottom: 0px;
+            }
+        </style>
+    </head>
     <body>
-        <pre>
+    <h1>Listenerův repozitář doplňků pro multimediální centrum Kodi</h1>
+    <div class="row">
+       <div class="column1">
+          <h2>Instalace repozitáře do Kodi</h2>
+          <h3>Metoda 1 - přidání externího zdroje souborů</h3>
+          <div class="paragraph">
+          <ol>
+            <li>V nastavení Kodi vyberte <b>Správce souborů</b> a klepněte na <b>Přidat zdroj</b>.</li>
+            <li>V otevřeném dialogu zadejte adresu <b>https://pako2.github.io/repo.listener-kodi_addons/</b> a jako název napište např. <b>Listenerovy doplňky pro Kodi</b>.</li>
+            <li>Potvrďte tlačítkem <b>OK</b>.</li>
+            <li>V hlavní nabídce vyberte <b>Doplňky</b> a <b>Instalovat ze souboru zip</b>.</li>
+            <li>V otevřeném dialogu vyberte <b>Listenerovy doplňky pro Kodi</b> (nebo jiný - v předchozím kroku vámi zvolený - název repozitáře).</li>
+            <li>V dalším dialogu klepněte na soubor <b>repository.listener-1.0.0.zip</b>.</li>
+            <li>Repozitář je nainstalovaný !</li>
+          </ol>
+          </div>
+          <h3>Metoda 2 - použití terminálu SSH</h3>
+          <div class="paragraph">
+          <ol>
+            <li>Pomocí terminálu SSH se připojte k vašemu Kodi.</li>
+            <li>Přejděte do vhodné složky (např. <b>temp</b>) a zadejte příkaz <b><i>wget https://pako2.github.io/repo.listener-kodi_addons/repository.listener-1.0.0.zip</i></b>  .</li>
+            <li>Dojde ke stažení souboru <b>repository.listener-1.0.0.zip</b>.</li>
+            <li>V hlavní nabídce vyberte <b>Doplňky</b> a <b>Instalovat ze souboru zip</b>.</li>
+            <li>V otevřeném průzkumníku navigujte k vybrané složce (<b>temp</b>).</li>
+            <li>Klepněte na stažený soubor <b>repository.listener-1.0.0.zip</b>.</li>
+            <li>Repozitář je nainstalovaný !</li>
+          </ol>
+          </div>
+          <h3>Přímý odkaz ke stažení souboru repozitáře:</h3>
+          <div class="paragraph">
+          <pre>
             <a href="repository.listener-1.0.0.zip">repository.listener-1.0.0.zip</a>
-        </pre><hr>
+          </pre>
+          </div>
+       </div>
+       <div class="column2">
+          <img src="icons/listener.png"  alt="listener" style="width:100%">
+       </div>
+    </div>
     </body>
 </html>
+
