@@ -1,5 +1,5 @@
 <addons>
-<addon id="repository.listener" version="1.0.0" name="Listener Repo" provider-name="listener">
+<addon id="repository.listener" version="1.0.0" name="Listener's Kodi Addons" provider-name="listener">
   <extension point="xbmc.addon.repository" name="Listener Repo">
     <dir minversion="18.9.0">
       <info>https://raw.githubusercontent.com/Pako2/repo.listener-kodi_addons/main/matrix/addons.xml</info>
@@ -13,8 +13,8 @@
     </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Listener Repo</summary>
-    <description>Listener Kodi Addons Repo</description>
+    <summary>Listener's Kodi Addons</summary>
+    <description>Listener's Kodi Addons Repository</description>
     <disclaimer></disclaimer>
     <platform>all</platform>
     <assets>
