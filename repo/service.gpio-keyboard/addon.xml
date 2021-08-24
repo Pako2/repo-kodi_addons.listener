@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.gpio-keyboard" name="GPIO keyboard" version="0.0.1" provider-name="listener">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="virtual.opi-tools" version="9.80.11.002"/>
+    <import addon="script.module.evdev" version="9.80.11.001"/>
+  </requires>
+  <extension library="service.py" point="xbmc.service">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">The buttons connected to the GPIO work like a normal keyboard.</summary>
+    <summary lang="cs_CZ">Tlačítka, připojená ke GPIO, fungují jako normální klávesnice.</summary>
+    <description lang="en_GB">
+The add-on allows you to use the buttons connected to the GPIO pins like a normal keyboard. I.e, that these buttons can be used to control Kodi using common keyboard shortcuts. For more information, see https://kodi.wiki/view/Keyboard_controls. Up to 16 buttons can be connected (set in the add-on) and each button can have two functions (the second function is selected by a long press). Two time intervals can be configured in the add-on settings: the time for filtering the bouncing and the minimum press length for activating the second function (if the use of the second function is enabled). You can also choose whether external pull-up resistors are connected or whether internal resistors should be used. The use of external resistors should provide a more reliable function. The internal resistors have a relatively large resistance (about 50 kΩ) and therefore this connection is more sensitive to interference.
+Kodi's behavior can be customized using a keymap - see https://kodi.wiki/view/Keymap. However, the "longpress" function mentioned there cannot be used. Keymaps can be edited with a standard text editor or with the Keymap Editor (https://kodi.wiki/view/Add-on:Keymap_Editor).
+The add-on depends on the Orange Pi Tools and python-evdev add-ons.
+    </description>
+    <description lang="cs_CZ">
+Doplněk umožňuje používat tlačítka, připojená ke GPIO pinům, jako normální klávesnici. To znamená, že těmito tlačítky lze ovládat Kodi prostřednictvím běžných klávesových zkratek. Bližší informace viz https://kodi.wiki/view/Keyboard_controls. Lze připojit (v doplňku nastavit) až 16 tlačítek a každé tlačítko může mít dvě funkce (druhá funkce se volí dlouhým stiskem). V nastavení doplňku lze volit dva časové intervaly: doba pro filrování zákmitů a minimální délka stisku pro zapnutí druhé funkce (pokud je použití druhé funkce povoleno). Dále lze volit, zda jsou zapojeny externí pull-up rezistory anebo mají být využity rezistory interní. Použití externích rezistorů by mělo přinést spolehlivější funkci. Interní rezistory mají poměrně velký odpor (asi 50 kΩ) a proto je toto zapojení citlivější na rušení.
+Chování Kodi lze přizpůsobit pomocí keymap - viz https://kodi.wiki/view/Keymap. Nelze však využívat tam zmíněnou funkci "longpress". Keymapy lze editovat běžným textovým editorem anebo pomocí doplňku Keymap Editor (https://kodi.wiki/view/Add-on:Keymap_Editor).
+Doplněk závisí na doplňcích Orange Pi Tools a python-evdev.
+    </description>
+    <platform>linux</platform>
+    <license>MIT License</license>
+    <language>cs_CZ</language>
+    <assets>
+      <icon>resources/art/icon.png</icon>
+      <fanart>resources/art/fanart.png</fanart>
+      <screenshot>resources/art/schematic1.png</screenshot>
+      <screenshot>resources/art/schematic2.png</screenshot>
+    </assets>
+    <news>
+0.0.1 (2021-07-28)
+- Initial release
+    </news>
+  </extension>
+</addon>
