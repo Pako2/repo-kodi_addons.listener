@@ -1,0 +1,498 @@
+# Kodi Media Center language file
+# Addon Name: GPIO keyboard
+# Addon id: service.gpio-keyboard
+# Addon Provider: listener
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+
+# Settings
+msgctxt "#30001"
+msgid "Common"
+msgstr  ""
+
+msgctxt "#30002"
+msgid "Buttons 1 - 8"
+msgstr  ""
+
+msgctxt "#30004"
+msgid "Buttons 9 - 16"
+msgstr  ""
+
+#format-label: ms
+msgctxt "#30006"
+msgid "{: <2} ms"
+msgstr ""
+
+msgctxt "#30000"
+msgid " "
+msgstr ""
+
+msgctxt "#30003"
+msgid " 3"
+msgstr ""
+
+msgctxt "#30005"
+msgid " 5"
+msgstr ""
+
+msgctxt "#30007"
+msgid " 7"
+msgstr ""
+
+msgctxt "#30008"
+msgid " 8"
+msgstr ""
+
+msgctxt "#30010"
+msgid "10"
+msgstr ""
+
+msgctxt "#30011"
+msgid "11"
+msgstr ""
+
+msgctxt "#30012"
+msgid "12"
+msgstr ""
+
+msgctxt "#30013"
+msgid "13"
+msgstr ""
+
+msgctxt "#30015"
+msgid "15"
+msgstr ""
+
+msgctxt "#30016"
+msgid "16"
+msgstr ""
+
+msgctxt "#30018"
+msgid "18"
+msgstr ""
+
+msgctxt "#30019"
+msgid "19"
+msgstr ""
+
+msgctxt "#30021"
+msgid "21"
+msgstr ""
+
+msgctxt "#30022"
+msgid "22"
+msgstr ""
+
+msgctxt "#30023"
+msgid "23"
+msgstr ""
+
+msgctxt "#30024"
+msgid "24"
+msgstr ""
+
+msgctxt "#30026"
+msgid "26"
+msgstr ""
+
+msgctxt "#30027"
+msgid "27"
+msgstr ""
+
+msgctxt "#30028"
+msgid "28"
+msgstr ""
+
+msgctxt "#30029"
+msgid "29"
+msgstr ""
+
+msgctxt "#30031"
+msgid "31"
+msgstr ""
+
+msgctxt "#30032"
+msgid "32"
+msgstr ""
+
+msgctxt "#30033"
+msgid "33"
+msgstr ""
+
+msgctxt "#30035"
+msgid "35"
+msgstr ""
+
+msgctxt "#30036"
+msgid "36"
+msgstr ""
+
+msgctxt "#30037"
+msgid "37"
+msgstr ""
+
+msgctxt "#30038"
+msgid "38"
+msgstr ""
+
+msgctxt "#30040"
+msgid "40"
+msgstr ""
+
+msgctxt "#30041"
+msgid "Orange Pi 2"
+msgstr ""
+
+msgctxt "#30042"
+msgid "Orange Pi 3"
+msgstr ""
+
+msgctxt "#30043"
+msgid "Orange Pi Lite2"
+msgstr ""
+
+msgctxt "#30044"
+msgid "Orange Pi One Plus"
+msgstr ""
+
+msgctxt "#30045"
+msgid "Orange Pi PC"
+msgstr ""
+
+msgctxt "#30046"
+msgid "Orange Pi PC2"
+msgstr ""
+
+msgctxt "#30047"
+msgid "Orange Pi PC Plus"
+msgstr ""
+
+msgctxt "#30048"
+msgid "Orange Pi Plus"
+msgstr ""
+
+msgctxt "#30049"
+msgid "Orange Pi Plus 2"
+msgstr ""
+
+msgctxt "#30050"
+msgid "Orange Pi Plus 2E"
+msgstr ""
+
+msgctxt "#30083"
+msgid "Service started"
+msgstr ""
+
+msgctxt "#30084"
+msgid "Service stopped"
+msgstr ""
+
+msgctxt "#30085"
+msgid "Settings changed"
+msgstr ""
+
+msgctxt "#30101"
+msgid "Orange Pi board"
+msgstr ""
+
+msgctxt "#30102"
+msgid "Number of buttons"
+msgstr ""
+
+msgctxt "#30103"
+msgid "Use internal pull-up resistor"
+msgstr ""
+
+msgctxt "#30104"
+msgid "Debounce time"
+msgstr ""
+
+msgctxt "#30105"
+msgid "Use two functions for each button"
+msgstr ""
+
+msgctxt "#30106"
+msgid "Minimal button press time for second function"
+msgstr ""
+
+msgctxt "#30111"
+msgid "Pin for connecting of button 1"
+msgstr ""
+
+msgctxt "#30112"
+msgid "Pin for connecting of button 2"
+msgstr ""
+
+msgctxt "#30113"
+msgid "Pin for connecting of button 3"
+msgstr ""
+
+msgctxt "#30114"
+msgid "Pin for connecting of button 4"
+msgstr ""
+
+msgctxt "#30115"
+msgid "Pin for connecting of button 5"
+msgstr ""
+
+msgctxt "#30116"
+msgid "Pin for connecting of button 6"
+msgstr ""
+
+msgctxt "#30117"
+msgid "Pin for connecting of button 7"
+msgstr ""
+
+msgctxt "#30118"
+msgid "Pin for connecting of button 8"
+msgstr ""
+
+msgctxt "#30119"
+msgid "Pin for connecting of button 9"
+msgstr ""
+
+msgctxt "#30120"
+msgid "Pin for connecting of button 10"
+msgstr ""
+
+msgctxt "#30121"
+msgid "Pin for connecting of button 11"
+msgstr ""
+
+msgctxt "#30122"
+msgid "Pin for connecting of button 12"
+msgstr ""
+
+msgctxt "#30123"
+msgid "Pin for connecting of button 13"
+msgstr ""
+
+msgctxt "#30124"
+msgid "Pin for connecting of button 14"
+msgstr ""
+
+msgctxt "#30125"
+msgid "Pin for connecting of button 15"
+msgstr ""
+
+msgctxt "#30126"
+msgid "Pin for connecting of button 16"
+msgstr ""
+
+msgctxt "#30131"
+msgid "First function of button 1"
+msgstr ""
+
+msgctxt "#30132"
+msgid "First function of button 2"
+msgstr ""
+
+msgctxt "#30133"
+msgid "First function of button 3"
+msgstr ""
+
+msgctxt "#30134"
+msgid "First function of button 4"
+msgstr ""
+
+msgctxt "#30135"
+msgid "First function of button 5"
+msgstr ""
+
+msgctxt "#30136"
+msgid "First function of button 6"
+msgstr ""
+
+msgctxt "#30137"
+msgid "First function of button 7"
+msgstr ""
+
+msgctxt "#30138"
+msgid "First function of button 8"
+msgstr ""
+
+msgctxt "#30139"
+msgid "First function of button 9"
+msgstr ""
+
+msgctxt "#30140"
+msgid "First function of button 10"
+msgstr ""
+
+msgctxt "#30141"
+msgid "First function of button 11"
+msgstr ""
+
+msgctxt "#30142"
+msgid "First function of button 12"
+msgstr ""
+
+msgctxt "#30143"
+msgid "First function of button 13"
+msgstr ""
+
+msgctxt "#30144"
+msgid "First function of button 14"
+msgstr ""
+
+msgctxt "#30145"
+msgid "First function of button 15"
+msgstr ""
+
+msgctxt "#30146"
+msgid "First function of button 16"
+msgstr ""
+
+msgctxt "#30151"
+msgid "Second function of button 1"
+msgstr ""
+
+msgctxt "#30152"
+msgid "Second function of button 2"
+msgstr ""
+
+msgctxt "#30153"
+msgid "Second function of button 3"
+msgstr ""
+
+msgctxt "#30154"
+msgid "Second function of button 4"
+msgstr ""
+
+msgctxt "#30155"
+msgid "Second function of button 5"
+msgstr ""
+
+msgctxt "#30156"
+msgid "Second function of button 6"
+msgstr ""
+
+msgctxt "#30157"
+msgid "Second function of button 7"
+msgstr ""
+
+msgctxt "#30158"
+msgid "Second function of button 8"
+msgstr ""
+
+msgctxt "#30159"
+msgid "Second function of button 9"
+msgstr ""
+
+msgctxt "#30160"
+msgid "Second function of button 10"
+msgstr ""
+
+msgctxt "#30161"
+msgid "Second function of button 11"
+msgstr ""
+
+msgctxt "#30162"
+msgid "Second function of button 12"
+msgstr ""
+
+msgctxt "#30163"
+msgid "Second function of button 13"
+msgstr ""
+
+msgctxt "#30164"
+msgid "Second function of button 14"
+msgstr ""
+
+msgctxt "#30165"
+msgid "Second function of button 15"
+msgstr ""
+
+msgctxt "#30166"
+msgid "Second function of button 16"
+msgstr ""
+
+msgctxt "#30300"
+msgid "None"
+msgstr ""
+
+msgctxt "#30301"
+msgid "C (Contextual menu)"
+msgstr ""
+
+msgctxt "#30302"
+msgid "E (EPG/TV guide)"
+msgstr ""
+
+msgctxt "#30303"
+msgid "F (Fast forward)"
+msgstr ""
+
+msgctxt "#30304"
+msgid "I (Information Page)"
+msgstr ""
+
+msgctxt "#30305"
+msgid "P (Play)"
+msgstr ""
+
+msgctxt "#30306"
+msgid "R (Rewind)"
+msgstr ""
+
+msgctxt "#30307"
+msgid "S (Shutdown menu)"
+msgstr ""
+
+msgctxt "#30308"
+msgid "X (Stop)"
+msgstr ""
+
+msgctxt "#30309"
+msgid "Space (Pause/Play)"
+msgstr ""
+
+msgctxt "#30310"
+msgid "Left"
+msgstr ""
+
+msgctxt "#30311"
+msgid "Right"
+msgstr ""
+
+msgctxt "#30312"
+msgid "Up"
+msgstr ""
+
+msgctxt "#30313"
+msgid "Down"
+msgstr ""
+
+msgctxt "#30314"
+msgid "Select (Enter)"
+msgstr ""
+
+msgctxt "#30315"
+msgid "Back (Backspace)"
+msgstr ""
+
+msgctxt "#30316"
+msgid "Esc"
+msgstr ""
+
+msgctxt "#30317"
+msgid "F8 (Mute)"
+msgstr ""
+
+msgctxt "#30318"
+msgid "- (Volume down)"
+msgstr ""
+
+msgctxt "#30319"
+msgid "+ (Volume up)"
+msgstr ""
+
+msgctxt "#30320"
+msgid "Home (Jump to top)"
+msgstr ""
