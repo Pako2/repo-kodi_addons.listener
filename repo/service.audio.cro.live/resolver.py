@@ -1,22 +1,11 @@
 # -*- coding: utf-8 -*-
 import sys
 import xbmc
-from xbmcgui import Dialog
-import xbmcaddon
-from os.path import join, isfile
-from codecs import open as codecs_open
-from json import loads
-from datetime import datetime as dt
-from service import addon, LANG, addonname, encode, decode
-from service import PY3, dictfile, jsonrequest, log, notify
+from service import LANG, addonname, encode, decode, stations_url
+from service import PY3, jsonrequest, log, notify
+from bs4 import BeautifulSoup
 
 base_url = "https://api.mujrozhlas.cz/"
-
-if isfile(dictfile):
-    f = codecs_open(dictfile, 'r', encoding = "utf-8")
-    data = f.read()
-    chann_dict = loads(data)
-    f.close()
 
 def okdialog(message):
     if PY3:
@@ -56,16 +45,13 @@ def getep(showid, since):
         resb = []
 #        resc = []
         limit = 30
-        #sinceb = since[:-3]
-        #sincec = since[:-6]
         since = since[:-3]
-        sinceb = since[:-6]
+        sinceb = since[:-3]
         for i in range(0, count, limit):
             epdata = getepisodes(showid, i, limit)
             if 'data' in epdata:
                 data = epdata['data']
                 for itm in data:
-                    #_since = itm['attributes']['since'][:-9]
                     _since = itm['attributes']['since'][:-12]
                     if _since == since:
                         res.append(itm)
@@ -111,6 +97,17 @@ def findshowid(statid, title):
     return ''
 
 def get_audio(kind):
+    chann_dict = {}
+    jsondata = jsonrequest(stations_url)
+    if jsondata and 'data' in jsondata:
+        stations = jsondata['data']
+        for i in stations:
+            if 'type' in i and 'attributes' in i and 'id' in i and i['type'] == 'station':
+                if 'shortTitle' in i['attributes']:
+                    chann_dict[i['attributes']['shortTitle']]=i['id']
+    else:
+        notify(LANG(30405))
+        return
     if sys.listitem.getPath() != xbmc.getInfoLabel('ListItem.FolderPath'):
         okdialog(LANG(30402))
         return
@@ -141,7 +138,8 @@ def get_audio(kind):
                     ep1b = [i for i in data if i['attributes']['since'][:-9] == since and encode(i['attributes']['title']) == label]
                     ep2b = [i for i in data if i['attributes']['since'][:-12] == since[:-3] and encode(i['attributes']['title']) == label]
                     ep3b = [i for i in data if i['attributes']['since'][:-15] == since[:-6] and encode(i['attributes']['title']) == label]
-                    ep = ep1a if ep1a else ep1b if ep1b else ep2a if ep2a else ep2b if ep2b else ep3a if ep3a else ep3b
+                    ep1c = [i for i in data if i['attributes']['since'][:-9] == since]
+                    ep = ep1a if ep1a else ep1b if ep1b else ep2a if ep2a else ep2b if ep2b else ep3a if ep3a else ep3b if ep3b else ep1c
                     if len(ep) > 1:
                         notify(LANG(30410))
                     ep = ep[0] if len(ep) else None
@@ -169,6 +167,9 @@ def get_audio(kind):
                                     title = ep['attributes']['title']
                                     log("title  = " + title)
                                     showid = findshowid(statid, title)
+                                    if not showid:
+                                        title = label
+                                        showid = findshowid(statid, title)
                         else:
                             notify(LANG(30405))
                             return
@@ -185,15 +186,11 @@ def get_audio(kind):
                                     if 'attributes' in epi:
                                         part = total = 0
                                         attrs = epi['attributes']
-                                        if len(epis) > 1:
-                                            descr = attrs['description'].replace('<p>','').replace('</p>','').replace('&nbsp;',' ')
-                                            title = attrs['title']
-                                            if 'part' in attrs and 'mirroredSerial' in attrs and 'totalParts' in attrs['mirroredSerial']:
-                                                part = attrs['part']
-                                                total = attrs['mirroredSerial']['totalParts']
-                                        else:
-                                            descr = plot
-                                            title = label
+                                        descr = BeautifulSoup(attrs['description'], "html.parser").text
+                                        title = attrs['title']
+                                        if 'part' in attrs and 'mirroredSerial' in attrs and 'totalParts' in attrs['mirroredSerial']:
+                                            part = attrs['part']
+                                            total = attrs['mirroredSerial']['totalParts']
                                         if 'asset' in attrs and 'url' in attrs['asset'] and attrs['asset']['url']:
                                             icon = attrs['asset']['url']
                                         if 'audioLinks' in attrs:
