@@ -1,0 +1,275 @@
+# Kodi Media Center language file
+# Addon Name: Orange Pi Cooling Fan
+# Addon id: service.fan.orangepi
+# Addon Provider: listener
+msgid ""
+msgstr ""
+
+# Settings
+msgctxt "#30000"
+msgid "Complete"
+msgstr ""
+
+#format-label: percent
+msgctxt "#30001"
+msgid "{: <3} %"
+msgstr ""
+
+#format-label: °C
+msgctxt "#30002"
+msgid "{: <2} °C"
+msgstr ""
+
+#format-label: s
+msgctxt "#30004"
+msgid "{: <2} s"
+msgstr ""
+
+msgctxt "#30003"
+msgid " 3"
+msgstr ""
+
+msgctxt "#30005"
+msgid " 5"
+msgstr ""
+
+msgctxt "#30007"
+msgid " 7"
+msgstr ""
+
+msgctxt "#30008"
+msgid " 8"
+msgstr ""
+
+msgctxt "#30010"
+msgid "10"
+msgstr ""
+
+msgctxt "#30011"
+msgid "11"
+msgstr ""
+
+msgctxt "#30012"
+msgid "12"
+msgstr ""
+
+msgctxt "#30013"
+msgid "13"
+msgstr ""
+
+msgctxt "#30015"
+msgid "15"
+msgstr ""
+
+msgctxt "#30016"
+msgid "16"
+msgstr ""
+
+msgctxt "#30018"
+msgid "18"
+msgstr ""
+
+msgctxt "#30019"
+msgid "19"
+msgstr ""
+
+msgctxt "#30021"
+msgid "21"
+msgstr ""
+
+msgctxt "#30022"
+msgid "22"
+msgstr ""
+
+msgctxt "#30023"
+msgid "23"
+msgstr ""
+
+msgctxt "#30024"
+msgid "24"
+msgstr ""
+
+msgctxt "#30026"
+msgid "26"
+msgstr ""
+
+msgctxt "#30027"
+msgid "27"
+msgstr ""
+
+msgctxt "#30028"
+msgid "28"
+msgstr ""
+
+msgctxt "#30029"
+msgid "29"
+msgstr ""
+
+msgctxt "#30031"
+msgid "31"
+msgstr ""
+
+msgctxt "#30032"
+msgid "32"
+msgstr ""
+
+msgctxt "#30033"
+msgid "33"
+msgstr ""
+
+msgctxt "#30035"
+msgid "35"
+msgstr ""
+
+msgctxt "#30036"
+msgid "36"
+msgstr ""
+
+msgctxt "#30037"
+msgid "37"
+msgstr ""
+
+msgctxt "#30038"
+msgid "38"
+msgstr ""
+
+msgctxt "#30040"
+msgid "40"
+msgstr ""
+
+msgctxt "#30041"
+msgid "Orange Pi 2"
+msgstr ""
+
+msgctxt "#30042"
+msgid "Orange Pi 3"
+msgstr ""
+
+msgctxt "#30043"
+msgid "Orange Pi Lite2"
+msgstr ""
+
+msgctxt "#30044"
+msgid "Orange Pi One Plus"
+msgstr ""
+
+msgctxt "#30045"
+msgid "Orange Pi PC"
+msgstr ""
+
+msgctxt "#30046"
+msgid "Orange Pi PC2"
+msgstr ""
+
+msgctxt "#30047"
+msgid "Orange Pi PC Plus"
+msgstr ""
+
+msgctxt "#30048"
+msgid "Orange Pi Plus"
+msgstr ""
+
+msgctxt "#30049"
+msgid "Orange Pi Plus 2"
+msgstr ""
+
+msgctxt "#30050"
+msgid "Orange Pi Plus 2E"
+msgstr ""
+
+msgctxt "#30070"
+msgid "Nothing"
+msgstr ""
+
+msgctxt "#30071"
+msgid "Only when the fan is switched on or off"
+msgstr ""
+
+msgctxt "#30072"
+msgid "Each determined value"
+msgstr ""
+
+msgctxt "#30080"
+msgid ", fan turned off"
+msgstr ""
+
+msgctxt "#30081"
+msgid ", fan turned on"
+msgstr ""
+
+msgctxt "#30082"
+msgid "Temperature: {:5.1f}°C, CPU usage: {:5.1f}%"
+msgstr ""
+
+msgctxt "#30083"
+msgid "Service started"
+msgstr ""
+
+msgctxt "#30084"
+msgid "Service stopped"
+msgstr ""
+
+msgctxt "#30101"
+msgid "Board"
+msgstr ""
+
+msgctxt "#30201"
+msgid "Choosing the type of board on which LibreELEC Kodi is running."
+msgstr ""
+
+msgctxt "#30102"
+msgid "Output pin for fan control"
+msgstr ""
+
+msgctxt "#30202"
+msgid "The control logic is positive (0V = off, 3.3V = on)."
+msgstr ""
+
+msgctxt "#30103"
+msgid "Turn on the fan when the temperature is higher than"
+msgstr ""
+
+msgctxt "#30203"
+msgid "If a higher hysteresis is set, the number of fan turns will be smaller and vice versa."
+msgstr ""
+
+msgctxt "#30104"
+msgid "Turn off the fan when the temperature is lower than"
+msgstr ""
+
+msgctxt "#30204"
+msgid "If it is taken into account, the condition of low CPU usage must also be met."
+msgstr ""
+
+msgctxt "#30105"
+msgid "Also take into account the high CPU usage"
+msgstr ""
+
+msgctxt "#30205"
+msgid "Timely turning on the fan due to high CPU usage can help prevent overheating."
+msgstr ""
+
+msgctxt "#30106"
+msgid "Turn on the fan if the CPU usage is greater than"
+msgstr ""
+
+msgctxt "#30107"
+msgid "Turn off the fan if the CPU usage is lower than"
+msgstr ""
+
+msgctxt "#30207"
+msgid "The temperature condition must also be met for switching off."
+msgstr ""
+
+msgctxt "#30108"
+msgid "Polling period"
+msgstr ""
+
+msgctxt "#30208"
+msgid "The temperature (and possibly also CPU usage) will be checked every ..."
+msgstr ""
+
+msgctxt "#30109"
+msgid "Log"
+msgstr ""
+
