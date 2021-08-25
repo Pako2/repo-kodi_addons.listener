@@ -1,0 +1,10 @@
+003 
+- fixed: use of pins belonging to PL bank
+- fixed: GPIO.input(channel) returns incorrect values when GPIO.add_event_detect(channel) is used
+
+002
+- fixed: calling of callbacks when mode == GPIO.BOARD
+
+001
+- Initial Release
+
