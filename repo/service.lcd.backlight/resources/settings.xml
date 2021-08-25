@@ -1,0 +1,133 @@
+<?xml version="1.0" ?>
+<settings version="1">
+<section id="service.cro.live">
+    <category id="complete" label="30000" help="">
+        <group id="1" label="">
+            <setting id="board" type="integer" label="30101" help="30201">
+                <level>0</level>
+                <default>3</default>
+                <constraints>
+                    <options>
+                        <option label="30041">0</option>
+                        <option label="30042">1</option>
+                        <option label="30043">2</option>
+                        <option label="30044">3</option>
+                        <option label="30045">4</option>
+                        <option label="30046">5</option>
+                        <option label="30047">6</option>
+                        <option label="30048">7</option>
+                        <option label="30049">8</option>
+                        <option label="30050">9</option>
+                    </options>
+                </constraints>
+                <control type="list" format="integer">
+                </control>
+            </setting>
+            <setting id="header26" type="integer" label="30102" help="30202">
+                <level>0</level>
+                <default>8</default>
+                <dependencies>
+                    <dependency type="visible">
+                        <or>
+                            <condition setting="board" operator="is">1</condition>
+                            <condition setting="board" operator="is">2</condition>
+                            <condition setting="board" operator="is">3</condition>
+                        </or>
+                    </dependency>
+                </dependencies>
+                <constraints>
+                    <options>
+                        <option label="30003">3</option>
+                        <option label="30005">5</option>
+                        <option label="30007">7</option>
+                        <option label="30008">8</option>
+                        <option label="30010">10</option>
+                        <option label="30011">11</option>
+                        <option label="30012">12</option>
+                        <option label="30013">13</option>
+                        <option label="30015">15</option>
+                        <option label="30016">16</option>
+                        <option label="30018">18</option>
+                        <option label="30019">19</option>
+                        <option label="30021">21</option>
+                        <option label="30022">22</option>
+                        <option label="30023">23</option>
+                        <option label="30024">24</option>
+                        <option label="30026">26</option>
+                    </options>
+                </constraints>
+                <control type="list" format="integer">
+                </control>
+            </setting>
+            <setting id="header40" type="integer" label="30102" help="30202">
+                <level>0</level>
+                <default>8</default>
+                <dependencies>
+                    <dependency type="visible">
+                        <or>
+                            <condition setting="board" operator="is">0</condition>
+                            <condition setting="board" operator="is">4</condition>
+                            <condition setting="board" operator="is">5</condition>
+                            <condition setting="board" operator="is">6</condition>
+                            <condition setting="board" operator="is">7</condition>
+                            <condition setting="board" operator="is">8</condition>
+                            <condition setting="board" operator="is">9</condition>
+                        </or>
+                    </dependency>
+                </dependencies>
+                <constraints>
+                    <options>
+                        <option label="30003">3</option>
+                        <option label="30005">5</option>
+                        <option label="30007">7</option>
+                        <option label="30008">8</option>
+                        <option label="30010">10</option>
+                        <option label="30011">11</option>
+                        <option label="30012">12</option>
+                        <option label="30013">13</option>
+                        <option label="30015">15</option>
+                        <option label="30016">16</option>
+                        <option label="30018">18</option>
+                        <option label="30019">19</option>
+                        <option label="30021">21</option>
+                        <option label="30022">22</option>
+                        <option label="30023">23</option>
+                        <option label="30024">24</option>
+                        <option label="30026">26</option>
+                        <option label="30027">27</option>
+                        <option label="30028">28</option>
+                        <option label="30029">29</option>
+                        <option label="30031">31</option>
+                        <option label="30032">32</option>
+                        <option label="30033">33</option>
+                        <option label="30035">35</option>
+                        <option label="30036">36</option>
+                        <option label="30037">37</option>
+                        <option label="30038">38</option>
+                        <option label="30040">40</option>
+                    </options>
+                </constraints>
+                <control type="list" format="integer">
+                </control>
+            </setting>
+            <setting id="logic" type="boolean" label="30105" help="30205">
+                <level>0</level>
+                <default>true</default>
+                <control type="toggle" />
+            </setting>
+            <setting id="value" type="integer" label="30107" help="30207">
+                <level>0</level>
+                <default>100</default>
+                <constraints>
+                    <minimum>0</minimum>
+                    <step>5</step>
+                    <maximum>100</maximum>
+                </constraints>
+                <control type="slider" format="integer">
+                    <formatlabel>30001</formatlabel>
+                </control>
+            </setting>
+        </group>
+    </category>
+</section>
+</settings>
