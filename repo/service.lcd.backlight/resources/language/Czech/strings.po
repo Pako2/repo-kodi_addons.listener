@@ -1,0 +1,214 @@
+# Kodi Media Center language file
+# Addon Name: Služba LCDproc Backlight
+# Addon id: service.lcd.backlight
+# Addon Provider: listener
+msgid ""
+msgstr ""
+
+# Settings
+msgctxt "#30000"
+msgid "Complete"
+msgstr "Kompletní"
+
+#format-label: percent
+msgctxt "#30001"
+msgid "{: <3} %"
+msgstr ""
+
+msgctxt "#30003"
+msgid " 3"
+msgstr ""
+
+msgctxt "#30005"
+msgid " 5"
+msgstr ""
+
+msgctxt "#30007"
+msgid " 7"
+msgstr ""
+
+msgctxt "#30008"
+msgid " 8"
+msgstr ""
+
+msgctxt "#30010"
+msgid "10"
+msgstr ""
+
+msgctxt "#30011"
+msgid "11"
+msgstr ""
+
+msgctxt "#30012"
+msgid "12"
+msgstr ""
+
+msgctxt "#30013"
+msgid "13"
+msgstr ""
+
+msgctxt "#30015"
+msgid "15"
+msgstr ""
+
+msgctxt "#30016"
+msgid "16"
+msgstr ""
+
+msgctxt "#30018"
+msgid "18"
+msgstr ""
+
+msgctxt "#30019"
+msgid "19"
+msgstr ""
+
+msgctxt "#30021"
+msgid "21"
+msgstr ""
+
+msgctxt "#30022"
+msgid "22"
+msgstr ""
+
+msgctxt "#30023"
+msgid "23"
+msgstr ""
+
+msgctxt "#30024"
+msgid "24"
+msgstr ""
+
+msgctxt "#30026"
+msgid "26"
+msgstr ""
+
+msgctxt "#30027"
+msgid "27"
+msgstr ""
+
+msgctxt "#30028"
+msgid "28"
+msgstr ""
+
+msgctxt "#30029"
+msgid "29"
+msgstr ""
+
+msgctxt "#30031"
+msgid "31"
+msgstr ""
+
+msgctxt "#30032"
+msgid "32"
+msgstr ""
+
+msgctxt "#30033"
+msgid "33"
+msgstr ""
+
+msgctxt "#30035"
+msgid "35"
+msgstr ""
+
+msgctxt "#30036"
+msgid "36"
+msgstr ""
+
+msgctxt "#30037"
+msgid "37"
+msgstr ""
+
+msgctxt "#30038"
+msgid "38"
+msgstr ""
+
+msgctxt "#30040"
+msgid "40"
+msgstr ""
+
+msgctxt "#30041"
+msgid "Orange Pi 2"
+msgstr ""
+
+msgctxt "#30042"
+msgid "Orange Pi 3"
+msgstr ""
+
+msgctxt "#30043"
+msgid "Orange Pi Lite2"
+msgstr ""
+
+msgctxt "#30044"
+msgid "Orange Pi One Plus"
+msgstr ""
+
+msgctxt "#30045"
+msgid "Orange Pi PC"
+msgstr ""
+
+msgctxt "#30046"
+msgid "Orange Pi PC2"
+msgstr ""
+
+msgctxt "#30047"
+msgid "Orange Pi PC Plus"
+msgstr ""
+
+msgctxt "#30048"
+msgid "Orange Pi Plus"
+msgstr ""
+
+msgctxt "#30049"
+msgid "Orange Pi Plus 2"
+msgstr ""
+
+msgctxt "#30050"
+msgid "Orange Pi Plus 2E"
+msgstr ""
+
+msgctxt "#30070"
+msgid "Nothing"
+msgstr "Nic"
+
+msgctxt "#30083"
+msgid "Service started"
+msgstr "Služba spuštěna"
+
+msgctxt "#30084"
+msgid "Service stopped"
+msgstr "Služba zastavena"
+
+msgctxt "#30085"
+msgid "Settings changed"
+msgstr "Nastavení změněno"
+
+msgctxt "#30101"
+msgid "Board"
+msgstr "Deska"
+
+msgctxt "#30201"
+msgid "Choosing the type of board on which LibreELEC Kodi is running."
+msgstr "Volba desky, na které LibreELEC Kodi běží."
+
+msgctxt "#30102"
+msgid "Output pin for fan control"
+msgstr "Výstupní pin pro ovládání podsvícení"
+
+msgctxt "#30105"
+msgid "The control logic is inverted"
+msgstr "Logika ovládání je inverzní"
+
+msgctxt "#30205"
+msgid "At 3.3V on the output pin, the backlight is off, on the contrary at 0V it is on."
+msgstr "Při 3.3V na výstupním pinu je podsvícení zhasnuté, naopak při 0V rozsvícené."
+
+msgctxt "#30107"
+msgid "Backlight intensity"
+msgstr "Intenzita podsvětlení"
+
+msgctxt "#30207"
+msgid "Backlight intensity percentage setting (0 - off, 100 - full)."
+msgstr "Nastavení procenta intenzity podsvětlení (0 - nesvítí, 100 - svítí naplno)."
+
+
