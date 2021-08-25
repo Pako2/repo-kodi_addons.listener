@@ -3,14 +3,14 @@
 <addon id="repository.listener" version="1.1.0" name="Listener's Kodi Addons" provider-name="listener">
   <extension point="xbmc.addon.repository" name="Listener Repo">
     <dir minversion="18.9.0">
-      <info>https://raw.githubusercontent.com/Pako2/datadir-RPi4.listener-kodi_addons/master/datadir-RPi4/addons.xml</info>
-      <checksum>https://raw.githubusercontent.com/Pako2/datadir-RPi4.listener-kodi_addons/master/datadir-RPi4/addons.xml.md5</checksum>
-      <datadir>https://raw.githubusercontent.com/Pako2/datadir-RPi4.listener-kodi_addons/master/datadir-RPi4/</datadir>
+      <info>https://raw.githubusercontent.com/Pako2/repo.listener-kodi_addons/master/datadir-RPi4/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Pako2/repo.listener-kodi_addons/master/datadir-RPi4/addons.xml.md5</checksum>
+      <datadir>https://raw.githubusercontent.com/Pako2/repo.listener-kodi_addons/master/datadir-RPi4/</datadir>
     </dir>
     <dir minversion="17.9.0">
-      <info>https://raw.githubusercontent.com/Pako2/datadir-RPi4.listener-kodi_addons/leia/datadir-RPi4/addons.xml</info>
-      <checksum>https://raw.githubusercontent.com/Pako2/datadir-RPi4.listener-kodi_addons/leia/datadir-RPi4/addons.xml.md5</checksum>
-      <datadir>https://raw.githubusercontent.com/Pako2/datadir-RPi4.listener-kodi_addons/leia/datadir-RPi4/</datadir>
+      <info>https://raw.githubusercontent.com/Pako2/repo.listener-kodi_addons/leia/datadir-RPi4/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Pako2/repo.listener-kodi_addons/leia/datadir-RPi4/addons.xml.md5</checksum>
+      <datadir>https://raw.githubusercontent.com/Pako2/repo.listener-kodi_addons/leia/datadir-RPi4/</datadir>
     </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
