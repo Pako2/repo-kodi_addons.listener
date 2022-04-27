@@ -23,7 +23,7 @@
     </assets>
   </extension>
 </addon>
-<addon id="service.audio.cro.live" name="ČRo Live" version="1.3.1" provider-name="listener">
+<addon id="service.audio.cro.live" name="ČRo Live" version="1.4.2" provider-name="listener">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.beautifulsoup4" version="4.6.2" />
@@ -63,6 +63,18 @@
             <fanart>CRoLive-fanart.png</fanart>
         </assets>
         <news>
+1.4.2 (2022-03-16)
+  - Opravena chyba - nefungovalo hledání v archivu, když linkType=='ondemand' a variant=='hls'
+  - Opravena chyba - nefungovalo hledání v archivu, když uživatel měl nastavený 12-hodinový formát
+1.4.1 (2021-12-22)
+  - Opravena chyba - nefungovalo stahování ve Windows (znak ":" v názvu souboru)
+  - Opravena chyba - odstraněna možnost konfliktů ID kanálu (ID je nyní doplněno prefixem "crolive_")
+1.4.0 (2021-12-12)
+  - Možnost výběru preferovaného kodeku (MP3 nebo AAC)
+  - Kvalita (bitrate) se volí z možností Nejvyšší|Střední|Nejnižší
+  - Pro nejvyšší kvalitu je možné povolit stream typu FLAC (je-li k dispozici)
+1.3.2 (2021-12-04)
+  - Opravena chyba - kromě mp3 je nyní akceptován i stream typu aac
 1.3.1 (2021-06-19)
   - Opravena chyba - nefunguje přehrávání z archivu
 1.3.0 (2021-06-18)
@@ -84,5 +96,171 @@
   - Optimalizace parsování data
         </news>
     </extension>
+</addon>
+<addon id="script.xbmc.lcdproc" name="XBMC LCDproc" version="3.90.2.1" provider-name="Team Kodi: Memphiz, Daniel 'herrnst' Scheller">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.service" library="main.py"/>
+  <extension point="xbmc.addon.metadata">
+    <language></language>
+    <summary lang="en_GB">Kodi/XBMC LCDproc</summary>
+    <description lang="en_GB">Displays configurable information e.g. about playing media or Kodi status on any LC/VF-display driven by LCDproc, and acts as direct drop-in replacement to the LCD/VFD-feature previously available in Kodi/XBMC's core. Supports additional display elements (icons, bars) on SoundGraph iMON LCD and Targa/Futaba mdm166a VFD hardware. Requires a properly configured and running LCDd either locally or somewhere on the network.</description>
+    <description lang="de_DE">Zeigt konfigurierbare Informationen z.B. über aktuelle Wiedergabe oder den Kodi Status auf beliebigen von LCDproc angesteuerten LC/VF-Displays, ersetzt die zuvor im Kodi/XBMC-Kern enthaltene LCD/VFD-Funktion. Unterstützt zusätzliche Elemente (Icons, Balken) von SoundGraph iMON LCD und Targa/Futaba mdm166a VFD Hardware. Benötigt einen konfigurierten, laufenden LCDd auf dem lokalen System oder im Netzwerk.</description>
+    <description lang="fr_FR">Affiche des informations définies par configuration telles que le média en cours de lecture, l'état de Kodi... et ce sur tout type d'afficheur LC/VF géré par LCDProc. Remplace la fonctionnalité LCD/VFD précédemment disponible par défaut dans Kodi/XBMC. Gère des éléments supplémentaires (icônes, barres) sur les écrans SoundGraph iMON LCD et Targa/Futaba mdm166a VFD. Nécessite un serveur LCDd correctement configuré et disponible localement ou sur le réseau.</description>
+    <description lang="pl_PL">Wyświetla konfigurowalne informacje np. o odtwarzanych mediach oraz statusie Kodi na dowolnym wyświetlaczu LCD/VFD sterowanym poprzez LCDproc. Działa jako bezpośredni zamiennik funkcji wyświetlania na  LCD/VFD poprzednio dostępnej w rdzeniu Kodi/XBMC. Wspiera wyświetlanie dodatkowych elementów (np. ikon stanu, linijek diodowych lub pasków postępu) na wyświetlaczach SoundGraph iMON (LCD) oraz Targa/Futaba mdm166a (VFD). Wymaga poprawnie skonfigurowanego i uruchomionego serwera LCDd albo lokalnie, albo gdzieś w sieci.</description>
+    <disclaimer lang="en_GB">Works with LCDproc only. Other LCD services like LCD4Linux or iMON Manager on Win32 are not supported. No liability taken for damaged hardware and/or software caused by this addon.</disclaimer>
+    <disclaimer lang="de_DE">Funktioniert ausschliesslich mit LCDproc. Andere LCD-Dienste wie LCD4Linux, iMON Manager unter Win32 u.a. sind nicht unterstützt. Keine Haftung für durch dieses Addon beschädigte Hard-/Software.</disclaimer>
+    <disclaimer lang="fr_FR">Fonctionne uniquement avec LCDProc. Les services tels que LCD4Linux ou iMON Manager sur Win32 ne sont pas gérés. Nous déclinons toute responsabilité en cas de dégats survenus suite à l'utilisation de cette extension.</disclaimer>
+    <disclaimer lang="pl_PL">Działa wyłącznie z LCDproc. Inne usługi LCD jak LCD4Linux lub iMON Manager dla Win32 nie są obsługiwane. Nie ponosimy żadnej odpowiedzialności za uszkodzony sprzęt i/lub oprogramowanie spowodowane tym dodatkiem.</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+    <website>https://github.com/lcdproc/lcdproc</website>
+    <forum>https://forum.kodi.tv/showthread.php?tid=143912</forum>
+    <source>https://github.com/herrnst/script.xbmc.lcdproc</source>
+    <email>nst at kodi dot tv</email>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+    <news>3.90.2
+- fix compatibility with Python 3.9+
+</news>
+  </extension>
+</addon>
+<addon id="script.module.smbus2"
+       name="smbus2"
+       version="10.0.0.100"
+       provider-name="LuRu">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib/">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>A drop-in replacement for smbus-cffi/smbus-python in pure Python.</summary>
+    <description>
+module.smbus2 (autogenerated)
+    </description>
+    <disclaimer>
+    </disclaimer>
+    <platform>all</platform>
+    <news>
+100
+- Initial release
+    </news>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.png</fanart>
+    </assets>
+  </extension>
+</addon>
+<addon id="script.module.luma"
+       name="luma"
+       version="10.0.0.100"
+       provider-name="LuRu">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib/">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>A library to drive an OLED device with either SSD1306, SSD1309, SSD1322, SSD1325, SSD1327, SSD1331, SSD1351, SSD1362, SH1106 or WS0010 chipset.</summary>
+    <description>
+A library to drive an OLED device with either SSD1306, SSD1309, SSD1322, SSD1325, SSD1327, SSD1331, SSD1351, SSD1362, SH1106 or WS0010 chipset.
+    </description>
+    <disclaimer>
+    </disclaimer>
+    <platform>all</platform>
+    <news>
+100
+- Initial release
+    </news>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.png</fanart>
+    </assets>
+  </extension>
+</addon>
+<addon id="script.module.cbor2"
+       name="cbor2"
+       version="10.0.0.100"
+       provider-name="LuRu">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib/">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python CBOR (de)serializer with extensive tag support.</summary>
+    <description>
+module.cbor2 (autogenerated)
+    </description>
+    <disclaimer>
+    </disclaimer>
+    <platform>all</platform>
+    <news>
+100
+- Initial release
+    </news>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.png</fanart>
+    </assets>
+  </extension>
+</addon>
+<addon id="service.oled"
+       name="OLEDproc"
+       version="10.0.0.100"
+       provider-name="LuRu">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.luma" />
+    <import addon="script.module.cbor2" />
+    <import addon="script.module.smbus2" />
+  </requires>
+  <extension point="xbmc.service" library="service.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>LCDproc: Software to display system information from Kodi on a graphic OLED display</summary>
+    <description lang="en_GB">
+The add-on displays real-time information about Kodi activity on graphic OLED displays. For these displays, it is a replacement for the LCDproc add-on. The add-on is dependent on the add-ons script.module.luma, script.module.cbor2 and script.module.smbus2. It also cannot work without the XBMC LCDproc add-on because both add-ons work together as client and server, where OLEDproc is the server and XBMC LCDproc is the client. Compared to the LCDproc add-on, the OLEDproc add-on has some minor limitations. For example:
+- the "Scroll mode" setting of the XBMC LCDproc add-on is ignored (scrolling works only one way)
+- the "Show heartbeat symbol" setting of the XBMC LCDproc add-on is ignored (display of symbol is permanently disabled)
+- some "advanced configurables" settings in the LCD.xml file (XBMC LCDproc add-on configuration file) are ignored and using non-default values can cause problems
+- a proportional font is used for most texts. As such, it makes no sense to use the $INFO[LCD.AlignCenter] and $INFO[LCD.AlignRight] parameters in the LCD.xml file (the XBMC LCDproc add-on does not have the ability to calculate the position of the text correctly)
+On the other hand, it has several advantages over the LCDproc add-on:
+- fully supports native Kodi encoding (UTF-8), so it displays all accented characters
+- the progress bar and the display of time data in large characters (BigDigits) is without disturbing gaps, so it looks much more natural
+- a proportional font is used to display texts, which is generally more readable and looks better than a non-proportional font
+In the current version, only I2C displays are supported (displays with sh1106, ssd1306, ssd1309, ssd1327 or sh1107 chip).
+Currently, only the function of displays with chips sh1106 and sh1107 is really verified.
+    </description>
+    <description lang="cs_CZ">
+Doplněk zobrazuje  v reálném čase na grafických OLED displejích informace o činnosti Kodi. Pro tyto displeje je náhradou doplňku LCDproc. Doplněk je závislý na doplňcích script.module.luma, script.module.cbor2 a script.module.smbus2. Nemůže fungovat také bez doplňku XBMC LCDproc, protože oba doplňky spolupracují jako klient a server, kde OLEDproc je server a XBMC LCDproc je klient. Oproti doplňku LCDproc má doplněk OLEDproc některá drobná omezení. Například:
+- je ignorováno nastavení "Scroll mode" doplňku XBMC LCDproc (skrolování funguje jen jedním způsobem)
+- je ignorováno nastavení "Show heartbeat symbol" doplňku XBMC LCDproc (zobrazování symbolu je napevno vypnuto)
+- některá nastavení "advanced configurables" v souboru LCD.xml (konfigurační soubor doplňku XBMC LCDproc) jsou ignorována a použití nevýchozích hodnot může způsobovat problémy
+- pro většinu textů se používá proporcionální font. Vzhledem k tomu nemá smysl používat parametry $INFO[LCD.AlignCenter] a $INFO[LCD.AlignRight] v souboru LCD.xml (doplněk XBMC LCDproc nemá požnost správně spočítat pozici textu)
+Na druhou stranu má oproti doplňku LCDproc i několik předností:
+- plně podporuje nativní kódování Kodi (UTF-8), takže zobrazuje všechny znaky s diakritikou
+- ukazatel průběhu a zobrazování časových údajů velkými znaky je bez rušivých mezer, takže vypadá mnohem přirozeněji
+- na zobrazování textů je používán proporcionální písmo, které je obecně čitelnější a lépe vypadá, než písmo neproporciální
+V současné verzi jsou podporovány jen displeje s rozhraním I2C (displeje s čipem sh1106, ssd1306, ssd1309, ssd1327 nebo sh1107).
+Reálně ověřená je aktuálně pouze funkce displejů s čipy sh1106 a sh1107.
+    </description>
+    <disclaimer>
+    </disclaimer>
+    <platform>linux</platform>
+    <news>
+100
+- Initial addon
+    </news>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.png</fanart>
+
+    </assets>
+  </extension>
 </addon>
 </addons>
